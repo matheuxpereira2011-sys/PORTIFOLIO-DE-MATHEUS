@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie sua foto de perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Crie sua foto de perfil</h1>
+
+        <p class="descricao">
+            Tire uma foto ou escolha uma imagem da galeria.
+        </p>
+
+        <div class="botoes-foto">
+
+            <label for="galeria" class="botao botao-galeria">
+                Escolher foto
+            </label>
+
+            <input
+                type="file"
+                id="galeria"
+                accept="image/*"
+                hidden
+            >
+
+            <label for="camera" class="botao botao-camera">
+                Tirar foto
+            </label>
+
+            <input
+                type="file"
+                id="camera"
+                accept="image/*"
+                capture="user"
+                hidden
+            >
+
+        </div>
+
+        <div class="area-canvas">
+
+            <canvas id="canvas"></canvas>
+
+            <div id="mensagem">
+                Escolha ou tire uma foto
+            </div>
+
+        </div>
+
+        <div class="controle-zoom">
+
+            <span class="texto-zoom">
+                ZOOM
+            </span>
+
+            <input
+                type="range"
+                id="zoom"
+                min="0.5"
+                max="2.5"
+                step="0.01"
+                value="0.85"
+            >
+
+        </div>
+
+        <p class="instrucao">
+            ☝️ Arraste a foto para posicioná-la.
+        </p>
+
+        <div class="acoes">
+
+            <button id="resetar" type="button">
+                ↺ Reposicionar
+            </button>
+
+            <button id="gerar" type="button">
+                Criar foto
+            </button>
+
+        </div>
+
+        <a
+            id="baixar"
+            download="foto-de-perfil.png"
+        >
+            📥 Baixar foto
+        </a>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
