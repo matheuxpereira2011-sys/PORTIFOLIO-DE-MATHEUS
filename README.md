@@ -6,11 +6,3 @@ HTML
 CSS
 JavaScript
 Inteligência Artificial
-
-Principais projetos:
-Chat de IA para programadores
-Clone do Chat GPT
-Cardapio para pastelaria local
-Cardápio para restaurante
-Gerador de simulados com IA (miicro saas)
-Loja virtual para loja de tênis
